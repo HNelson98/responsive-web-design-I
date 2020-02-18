@@ -66,7 +66,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* index CSS */
+
 header{
 	display: flex;
 	justify-content: space-around;
@@ -128,9 +131,12 @@ nav a{
 }
 .botcontent{
 		display: flex;
-		height: 33vh;
+		height: 40vh;
 		font-size: 20px;
-		line-height: 1.5;
+        line-height: 1.5;
+        margin-top: 10%;
+        margin: 2%;
+        padding: 2%;
 }
 footer{
     display: flex;
@@ -147,6 +153,9 @@ footer p{
 	justify-content: center;
 	text-align: center;
 }
+
+/* services CSS */
+
 .services-header-img{
 	width: 100%;
 }
@@ -207,14 +216,24 @@ ul{
 	width: 45%;
 	margin: 4%;
 }
+/* index responsive */
 
-@media (max-width: 1024px){
+@media (max-width: 800px){
     .CTA img{
         display: none;
+    
     }
+    .botcontent{
+        display: flex;
+        justify-content: space-around;
+        height: 55vh;
+        margin-top: 10%;
+        
+    }
+    
 }
 
-@media (max-width:600px){
+@media (max-width:500px){
     header{
         flex-direction: column-reverse;
         justify-content: center;
@@ -270,5 +289,47 @@ ul{
     height: 50vh;
     margin: 3%;
   }
-  }
+  
+}
+
+/* servicesresponsiv */
+@media (max-width: 800px){
+    header{
+        margin-bottom: 5%;
+    }
+    .services{
+        margin-bottom: 13%;
+    }
+    .center-content div{
+        height: 40vh;
+    }
+    .servfoot{
+        margin-top: 50%;
+    }
+    .facts{
+        height: 60vh;
+    }
+}
+
+@media (max-width: 300px){
+    .services{
+        margin-bottom: 13%;
+    }
+    .center-content{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 80%;
+        margin-top: 20%;
+    }
+    .center-content div{
+        height: 100vh;
+        width: 80%;
+    }
+    .servfoot{
+        margin-top: 50%;
+    }
+    .facts{
+        height: 60vh;
+    }
+}
 }
